@@ -320,7 +320,7 @@ public class Decompiler
         }
 
         while (i < length) {
-            switch(source.charAt(i)) {
+            switch((int)source.charAt(i)) {
             case Token.GET:
             case Token.SET:
                 result.append(source.charAt(i) == Token.GET ? "get " : "set ");
